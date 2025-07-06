@@ -1,25 +1,3 @@
-소프트웨어 공학 관점에서 기능 정의서에 포함되어야 할 사항입니다. 기능 정의서는 소프트웨어 개발 프로젝트의 성공적인 진행을 위해 필수적인 문서로, 다음과 같은 항목들이 포함되어야 합니다:
-
-| **항목**                     | **설명**                                                                                   |
-|-----------------------------|------------------------------------------------------------------------------------------|
-| **기능 목적**                | 각 기능이 해결하고자 하는 문제나 달성하고자 하는 목표를 명시합니다.                             |
-| **기능 요약**                | 기능의 핵심 내용을 간략하게 설명하는 1-2문장의 개요를 제공합니다.                             |
-| **세부 정책/기능 설명**      | 기능의 상세한 작동 방식, 규칙, 제약 조건 등을 구체적으로 설명합니다.                           |
-| **사용자 시나리오**          | 사용자가 기능을 어떻게 사용할지를 설명하는 시나리오를 포함하여 실제 사용 사례를 제시합니다.         |
-| **우선순위 및 중요도**       | 각 기능의 우선순위나 중요성을 나타내는 지표를 설정하여 개발 시 참고할 수 있도록 합니다.              |
-| **지원 디바이스**            | 해당 기능이 구현되어야 하는 하드웨어 플랫폼이나 운영 체제의 목록을 설정합니다.                     |
-| **비고**                     | 주요 항목에 포함되지 않는 추가 정보, 특이사항, 또는 고려사항을 기록하여 참고할 수 있는 정보를 제공합니다. |
-| **테스트 계획**              | 기능이 구현된 후 어떻게 테스트할 것인지에 대한 계획을 포함하여 품질 보증을 위한 기준을 설정합니다.     |
-| **변경 관리**                | 기능 정의서의 변경 이력을 관리하고, 변경 사항에 대한 승인 절차를 명시합니다.                       |
-| **보안 요구사항**            | 데이터 보호 및 시스템 보안을 위한 요구사항을 명시하여 보안 관련 문제를 사전에 예방합니다.            |
-
-이러한 항목들은 기능 정의서의 완전성을 높이고, 프로젝트의 방향성을 명확히 하며, 팀원 간의 원활한 소통을 도와줍니다. 각 항목은 프로젝트의 특성과 요구사항에 따라 조정될 수 있습니다.
-[1] https://docs.hexagonppm.com/r/en-US/Administration-and-Configuration-of-HxGN-SDx/961199
-[2] https://docs.hexagonppm.com/r/en-US/HxGN-SDx-Modified-and-Retired-Functionality/1129845
-[3] https://www.training.go.kr/htmi/Report/TD0392TR0221016/20230604JxV4oQ22.pdf?saveas=%5Be3%5D6vMf6ZZIEbQ6P3xiE-uXhFWFZuVmNsLFmpGNbvmaQ_UBkhqfl_GTUIlUEkmqwMqEyHSXGXn1dOmUGq5nq_KYpZ02wZFgC71Ug19AhtsXdYIpGj_EhHYEnVKiwrZqBnv_dgokfjvkAKw6Wo-WMFkH6smsXgfg==
-
-
-
 기능 정의서에 대한 국제적 표준 및 산업 표준은 소프트웨어 개발 및 시스템 엔지니어링에서 중요한 역할을 합니다. 다음은 주요 표준과 그 설명입니다.
 
 ## **주요 국제 표준**
@@ -50,6 +28,37 @@
 [3] https://kmong.com/gig/569022
 [4] https://en.wikipedia.org/wiki/Functional_specification
 [5] https://www.justinmind.com/blog/functional-specification-documentation-quick-guide-to-making-your-own/
+
+아래는 ISO/IEC/IEEE 29148:2011에 따른 요구사항 정의서의 구성 요소를 정리한 표입니다.
+
+| 구성 요소                                   | 설명                                                                                     |
+|------------------------------------------|----------------------------------------------------------------------------------------|
+| 1. 소개 (Introduction)                   | 요구사항 정의서의 목적, 범위 및 개요를 설명합니다.                                         |
+| 1.1 목적 (Purpose)                       | 문서의 목적과 필요성을 명확히 합니다.                                                  |
+| 1.2 범위 (Scope)                         | 제품의 범위와 적용 범위를 정의합니다.                                                  |
+| 1.3 제품 개요 (Product Overview)        | 제품의 전반적인 개요를 제공합니다.                                                     |
+| 1.4 제품 관점 (Product Perspective)      | 제품이 다른 제품과 어떻게 연결되는지를 설명합니다.                                      |
+| 1.5 제품 기능 (Product Features)        | 제품이 제공하는 주요 기능을 요약합니다.                                               |
+| 1.6 사용자 기능 (User Features)         | 제품의 대상 사용자 그룹을 설명합니다.                                                  |
+| 1.7 제한 사항 (Limitations)              | 하드웨어 및 법적 규제와 같은 제한 사항을 명시합니다.                                   |
+| 1.8 정의 (Definitions)                   | 문서에서 사용되는 용어를 정의합니다.                                                  |
+| 1.9 외부 인터페이스 (External Interfaces) | 제품의 입력 및 작업을 설명합니다.                                                     |
+| 1.10 사용성 요구사항 (Usability Requirements) | 제품의 사용성 관련 요구사항을 정의합니다.                                            |
+| 1.11 성능 요구사항 (Performance Requirements) | 시스템의 성능 기준을 명시합니다.                                                      |
+| 1.12 논리적 데이터베이스 요구사항 (Logical Database Requirements) | 데이터베이스에 저장될 정보의 논리적 요구사항을 정의합니다.                             |
+| 1.13 설계 제한 사항 (Design Limitations) | 시스템 설계에 영향을 미치는 제한 사항을 나열합니다.                                    |
+| 1.14 소프트웨어 시스템 특성 (Software System Attributes) | 신뢰성, 가용성, 보안성 등 시스템의 특성을 설명합니다.                                   |
+| 1.15 지원 정보 (Supporting Information) | 프로젝트가 해결하는 문제에 대한 설명 및 예시 데이터를 포함합니다.                       |
+| 2. 검증 (Verification)                   | 요구사항의 검증 방법을 설명합니다.                                                     |
+| 3. 첨부 (Attachments)                    | 가정 및 의존성, 약어 등을 포함하여 문서를 보완합니다.                                   |
+
+이 표는 ISO/IEC/IEEE 29148:2011의 요구사항 정의서 구성 요소를 체계적으로 정리하여, 소프트웨어 개발 과정에서 요구사항을 명확히 하고 이해관계자 간의 소통을 원활하게 하는 데 도움을 줍니다.
+[1] https://www.microtool.de/en/knowledge-base/what-is-a-software-requirements-specification/
+[2] https://www.iso.org/standard/45171.html
+[3] https://standards.ieee.org/ieee/29148/5289/
+[4] https://www.reqview.com/doc/iso-iec-ieee-29148-templates/
+[5] https://softwareengineering.stackexchange.com/questions/389038/formulating-requirements-using-iso-iec-ieee-29148-2011-2018
+
 
 
 아래는 IEEE Std 830-1998에 따른 요구사항 정의서(SRS)의 구성 요소를 정리한 표입니다.
@@ -196,3 +205,24 @@ CMMI(능력 성숙도 모델 통합) 관점에서 기능 정의서에 포함되�
 [23] https://changyujin.tistory.com/18
 [24] https://nolja119.tistory.com/85
 [25] https://www.techtarget.com/searchsoftwarequality/definition/functional-specification
+
+소프트웨어 공학 관점에서 기능 정의서에 포함되어야 할 사항입니다. 기능 정의서는 소프트웨어 개발 프로젝트의 성공적인 진행을 위해 필수적인 문서로, 다음과 같은 항목들이 포함되어야 합니다:
+
+| **항목**                     | **설명**                                                                                   |
+|-----------------------------|------------------------------------------------------------------------------------------|
+| **기능 목적**                | 각 기능이 해결하고자 하는 문제나 달성하고자 하는 목표를 명시합니다.                             |
+| **기능 요약**                | 기능의 핵심 내용을 간략하게 설명하는 1-2문장의 개요를 제공합니다.                             |
+| **세부 정책/기능 설명**      | 기능의 상세한 작동 방식, 규칙, 제약 조건 등을 구체적으로 설명합니다.                           |
+| **사용자 시나리오**          | 사용자가 기능을 어떻게 사용할지를 설명하는 시나리오를 포함하여 실제 사용 사례를 제시합니다.         |
+| **우선순위 및 중요도**       | 각 기능의 우선순위나 중요성을 나타내는 지표를 설정하여 개발 시 참고할 수 있도록 합니다.              |
+| **지원 디바이스**            | 해당 기능이 구현되어야 하는 하드웨어 플랫폼이나 운영 체제의 목록을 설정합니다.                     |
+| **비고**                     | 주요 항목에 포함되지 않는 추가 정보, 특이사항, 또는 고려사항을 기록하여 참고할 수 있는 정보를 제공합니다. |
+| **테스트 계획**              | 기능이 구현된 후 어떻게 테스트할 것인지에 대한 계획을 포함하여 품질 보증을 위한 기준을 설정합니다.     |
+| **변경 관리**                | 기능 정의서의 변경 이력을 관리하고, 변경 사항에 대한 승인 절차를 명시합니다.                       |
+| **보안 요구사항**            | 데이터 보호 및 시스템 보안을 위한 요구사항을 명시하여 보안 관련 문제를 사전에 예방합니다.            |
+
+이러한 항목들은 기능 정의서의 완전성을 높이고, 프로젝트의 방향성을 명확히 하며, 팀원 간의 원활한 소통을 도와줍니다. 각 항목은 프로젝트의 특성과 요구사항에 따라 조정될 수 있습니다.
+[1] https://docs.hexagonppm.com/r/en-US/Administration-and-Configuration-of-HxGN-SDx/961199
+[2] https://docs.hexagonppm.com/r/en-US/HxGN-SDx-Modified-and-Retired-Functionality/1129845
+[3] https://www.training.go.kr/htmi/Report/TD0392TR0221016/20230604JxV4oQ22.pdf?saveas=%5Be3%5D6vMf6ZZIEbQ6P3xiE-uXhFWFZuVmNsLFmpGNbvmaQ_UBkhqfl_GTUIlUEkmqwMqEyHSXGXn1dOmUGq5nq_KYpZ02wZFgC71Ug19AhtsXdYIpGj_EhHYEnVKiwrZqBnv_dgokfjvkAKw6Wo-WMFkH6smsXgfg==
+
